@@ -69,4 +69,8 @@ else:
 
 
 
-# Results and Output : 
+# Output : 
+![Screenshot_626](https://user-images.githubusercontent.com/75235455/166258488-dfe335fd-71f0-4757-9dfd-6a5ccee24195.png)
+
+# Result :
+Binomial distribution for the given frequencey distribution was fitted.
