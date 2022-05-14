@@ -50,10 +50,10 @@ print("  X  P(X=x)  Obs.Fr  Ex.Fre     xi ")
 print("--------------------------------------")
 for x in range(7):
     c=math.factorial(n)/(math.factorial(x)*math.factorial(n-x))
-    Prob.append(c*p*x*q*(n-x))
-    E.append(Pr[x]*N)
+    Prob.append(c*p**x*q**(n-x))
+    E.append(Prob[x]*N)
     xi.append((f[x]-E[x])**2/E[x])
-    print("%2.2f  %2.2f   %4.2f   %3.2f  %3.2f"%(x,Pr[x],f[x],E[x],xi[x]))
+    print("%2.2f  %2.2f   %4.2f   %3.2f  %3.2f"%(x,Prob[x],f[x],E[x],xi[x]))
 print("----------------------------------")
 calculate_chi2=np.sum(xi)
 print("Calculated value of Chi square is %4.2f"%calculate_chi2)
@@ -70,7 +70,8 @@ else:
 
 
 # Output : 
-![Screenshot_626](https://user-images.githubusercontent.com/75235455/166258488-dfe335fd-71f0-4757-9dfd-6a5ccee24195.png)
+![Screenshot_633](https://user-images.githubusercontent.com/75235455/168429460-b714f02b-e8d6-469f-8be4-c61ff1d45474.png)
+
 
 # Result :
 Thus, fitting binomial distribution for the given frequencey distribution is verified
